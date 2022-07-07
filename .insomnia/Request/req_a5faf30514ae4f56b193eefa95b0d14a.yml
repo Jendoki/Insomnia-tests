@@ -1,7 +1,7 @@
 _id: req_a5faf30514ae4f56b193eefa95b0d14a
 type: Request
 parentId: fld_137422d21c94497f9537c1a650d4c507
-modified: 1657203362884
+modified: 1657203652956
 created: 1656943214917
 url: http://localhost:4000/graphql
 name: Get Campaign
@@ -9,8 +9,8 @@ description: ""
 method: POST
 body:
   mimeType: application/graphql
-  text: '{"query":"query {\n  campaign(id: \"{{ _.id }}\")
-    {\n    id\n    name\n  }\n}"}'
+  text: '{"query":"query ($id: ULID!) {\n  campaign(id: $id)
+    {\n    id\n    name\n  }\n}","variables":{"id":"{{ _.id }}"}}'
 parameters: []
 headers:
   - name: Content-Type
