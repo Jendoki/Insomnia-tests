@@ -1,7 +1,7 @@
 _id: req_60cfff5bea1b4a669d427564008b26af
 type: Request
 parentId: fld_137422d21c94497f9537c1a650d4c507
-modified: 1657202532136
+modified: 1657202925948
 created: 1657096280883
 url: http://localhost:4000/graphql
 name: Get Campaign After Update
